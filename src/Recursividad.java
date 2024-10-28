@@ -34,8 +34,8 @@ public class Recursividad {
     // 4+5+6=15
     public int sumaDigitos(int numero) {
         // Caso base: 
-        if (numero == 0) {
-            return 0;
+        if (numero < 10) {
+            return numero;
         }     
         return (numero % 10) + sumaDigitos(numero / 10);
     }
